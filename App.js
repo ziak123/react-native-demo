@@ -1,13 +1,11 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-
-const App = () => {
+import React, { Component } from 'react';
+import { View, Text, SafeAreaView } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Navigation from './src/navigation'
+export default function App() {
   return (
-    <View>
-      <Text>Appsjsjs</Text>
-      <Text>kkddk</Text>
-    </View>
+    <SafeAreaProvider style={{ flex: 1 }}>
+      <Navigation />
+    </SafeAreaProvider>
   )
 }
-
-export default App
