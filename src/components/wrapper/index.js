@@ -131,7 +131,7 @@ export default ({
                 isCenter && appStyles.center,
                 //background
                 background1 && appStyles.backgroundColorWhite,
-                background2 && { backgroundColor: colors.appBgColor2 },
+                background2 && { backgroundColor: colors.appBgColor6 },
                 backgroundDark && { backgroundColor: colors.appBgColor6 },
                 style]}>
             {children}

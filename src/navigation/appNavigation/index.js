@@ -11,16 +11,9 @@ const AppNavigation = () => {
         screenOptions={headers.screenOptions}
             initialRouteName={routes.mapscreen}
         >
-            <AppStack.Screen name={routes.home} component={App.Home}
-                options={{
-                    headerShown: false,
-                    //title: 'Home'
-                }}
-            />
             <AppStack.Screen name={routes.mapscreen} component={App.MapScreen}
                 options={{
                     headerShown: false,
-                    //title: 'Home'
                 }}
             />
         </AppStack.Navigator>

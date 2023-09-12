@@ -4,7 +4,7 @@ import { appStyles } from '../../../services';
 
 function Splash() {
   return (
-    <Wrapper isMain isCenter>
+    <Wrapper isMain isCenter background2>
       <Text isLargeTitle>Splash</Text>
     </Wrapper>
   );

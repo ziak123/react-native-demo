@@ -1,16 +1,19 @@
-import React, { Component, useState } from 'react';
-import { View, Text } from 'react-native';
+import React, {useState} from 'react';
 import { totalSize } from 'react-native-dimension';
-import { Logos, Toasts, Icons, TextInputs, Buttons, ScrollViews, Wrapper, Spacer } from '../../../components';
+import { Logos,TextInputs, Buttons, ScrollViews, Wrapper, Spacer } from '../../../components';
 import {routes } from '../../../services';
+import { styles } from './style';
+import Text from '../../../components/text';
 
 function Signin({navigation}) {
+  //State 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  //validation Function
   const handleLogin = () => {
-    if (username === 'zia' && password === 'zia123') {
+    if (username === 'Zia' && password === 'Zia1234') {
       // Navigate to the map screen.
       navigation.navigate(routes.app);
     } else {
@@ -18,9 +21,9 @@ function Signin({navigation}) {
     }
   };
   return (
-    <Wrapper isMain style={[{}]}>
+    <Wrapper isMain background2>
       <ScrollViews.KeyboardAvoiding>
-        <Spacer isBasic />
+        <Spacer isDoubleBase />
         <Wrapper alignItemsCenter>
           <Logos.Primary
             size={totalSize(25)}
@@ -50,12 +53,12 @@ function Signin({navigation}) {
             text="Log In"
             iconName="login"
             iconType="material-community"/>
-             <Text style={{ color: 'red' }}>{error}</Text>
+            <Spacer isTiny/>
+             <Text  style={styles.text}>{error}</Text>
         </Wrapper>
         <Spacer isBasic />
       </ScrollViews.KeyboardAvoiding>
     </Wrapper>
   );
 }
-
 export default Signin;

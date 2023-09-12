@@ -39,29 +39,33 @@ export const colors = {
   appGradiantColors: ['#4E20EA', 'rgba(214,48,49, 1)'],
 
   appColor1: '#4E20EA',
-  appColor2: 'rgba(214,48,49, 1)',
+  appColor2: '#E7E7E7 ',
   appColor3:'#E8B02D',
-  appColor5: '#FFF5E5',
-  appColor6:'#FFFF00',
-  appColor7:'#FF9A9A',
-  appColor8:'#FB7979',
+  appColor4:'rgba(0, 0, 255, 0.7)',
+  appColor5: 'rgba(0, 255, 0, 0.5)',
+  appColor6:'#FFFFFF',
+  appColor7:'rgba(255, 0, 0, 0.7)',
+  appColor8:'rgba(255, 0, 0, 0.5)',
   appColor9:'#003162',
   appColor10:'#FFDD00',
 
 
   appTextColor1: '#000000',
-  appTextColor2: 'rgba(26,26,26, 1)',
+  appTextColor2: '#E7E7E7 ',
   appTextColor3: '#333333',
-  appTextColor4: 'grey',
-  appTextColor5: '#A1A1A1',
+  appTextColor4: 'rgba(0, 0, 255, 0.7)',
+  appTextColor5: 'rgba(0, 255, 0, 0.5)',
   appTextColor6: '#FFFFFF',
-  appTextColor7:'#DED9D9',
+  appTextColor7:'rgba(255, 0, 0, 0.7)',
+  appTextColor8:'rgba(255, 0, 0, 0.5)',
 
-  appBgColor1: '#FFFFFF',
-  appBgColor2: '#F8F8F8',
+  appBgColor1: 'black',
+  appBgColor2: '#E7E7E7',
   appBgColor3: '#E9E9E9',
-  appBgColor4: '#AAAAAA',
-  appBgColor5: 'rgba(26,26,26, 1)',
-  appBgColor6: '#000000'
+  appBgColor4: 'rgba(0, 0, 255, 0.7)',
+  appBgColor5: 'rgba(0, 255, 0, 0.5)',
+  appBgColor6: '#FFFFFF',
+  appBgColor7:'rgba(255, 0, 0, 0.7)',
+  appBgColor8:'rgba(255, 0, 0, 0.5)'
 }
 

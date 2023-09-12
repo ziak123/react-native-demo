@@ -11,34 +11,6 @@ export default ({
     isMediumTitle,
     isSmallTitle,
     isTinyTitle,
-    isLarge,
-    isMedium,
-    isRegular,
-    isSmall,
-    isTiny,
-    isXTiny,
-    isInput,
-    isButtonRegular,
-    isButtonMedium,
-    isButtonLarge,
-    //align text
-    alignTextCenter,
-    alignTextRight,
-    //colors
-    isTextColor2,
-    isDarkGray,
-    isGray,
-    isLightGray,
-    isWhite,
-    isPrimaryColor,
-    isSecondaryColor,
-    isForthColor,
-    //others
-    isUnderlined,
-    isBoldFont,
-    isMediumFont,
-    isRegularFont,
-    isLightFont,
     ...props }) => {
     return (
         <Text
@@ -50,37 +22,6 @@ export default ({
                 isMediumTitle && styles.mediumTitleStyle,
                 isSmallTitle && styles.smallTitleStyle,
                 isTinyTitle && styles.tinyTitleStyle,
-                //normal text
-                isLarge && styles.largeTextStyle,
-                isMedium && styles.mediumTextStyle,
-                isRegular && styles.regularTextStyle,
-                isSmall && styles.smallTextStyle,
-                isTiny && styles.tinyTextStyle,
-                isXTiny&&appStyles.xTinyText,
-
-                isInput && styles.inputTitleStyle,
-                isButtonRegular && styles.ButtonTextRegularStyle,
-                isButtonMedium && styles.ButtonTextMediumStyle,
-                isButtonLarge && appStyles.ButtonTextLarge,
-                //align text
-                alignTextCenter && appStyles.textCenter,
-                alignTextRight && appStyles.alignTextRight,
-                //text colors
-                isTextColor2&&appStyles.textColor2,
-                isDarkGray && appStyles.textDarkGray,
-                isGray && appStyles.textGray,
-                isLightGray && appStyles.textLightGray,
-                isWhite && appStyles.textWhite,
-                isPrimaryColor && appStyles.textPrimaryColor,
-                isSecondaryColor && appStyles.textSecondaryColor,
-                isForthColor && appStyles.textForthColor,
-
-                //others
-                isUnderlined && appStyles.textUnderlined,
-                isBoldFont && appStyles.fontBold,
-                isMediumFont && appStyles.fontMedium,
-                isRegularFont && appStyles.fontRegular,
-                isLightFont && appStyles.fontLight,
                 style,]}
             {...props}
         >
@@ -110,33 +51,7 @@ const styles = StyleSheet.create({
     },
     tinyTitleStyle: {
         ...appStyles.h6,
-    },
-    largeTextStyle: {
-        ...appStyles.textLarge
-    },
-    mediumTextStyle: {
-        ...appStyles.textMedium
-    },
-    regularTextStyle: {
-        ...appStyles.textRegular
-    },
-    smallTextStyle: {
-        ...appStyles.textSmall
-    },
-    tinyTextStyle: {
-        ...appStyles.textTiny
-    },
-    inputTitleStyle: {
-        ...appStyles.textRegular,
-        ...appStyles.fontLight,
-        ...appStyles.textColor2
-    },
-    ButtonTextRegularStyle: {
-        ...appStyles.ButtonRegular,
-    },
-    ButtonTextMediumStyle: {
-        ...appStyles.ButtonMedium,
-    },
+    }
 
 });
 

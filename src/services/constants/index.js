@@ -1,20 +1,11 @@
 import {colors}  from "../utilities/colors"
 import  {appStyles}  from "../utilities/appStyles"
 
-
-export const baseURL = ''
-export const endPoints = {
-    login: 'login',
-    courses:'rooms',
-    classes:'classes',
-}
 export const routes={
     auth:'auth',
     app:'app',
     splash:'splash',
     signin:'signin',
-    signup:'signup',
-    home:'home',
     mapscreen:'mapscreen'
 }
 export const headers = {
