@@ -1,17 +1,13 @@
 // screens/CreateScreen.js
 import React, { useState } from 'react';
-import { View, Text, Button, StyleSheet, Dimensions } from 'react-native';
-import MapView, { Polygon,PROVIDER_GOOGLE, Marker } from 'react-native-maps';
+import MapView, { Polygon, PROVIDER_GOOGLE, Marker } from 'react-native-maps';
 import { Buttons } from '../../../components';
-import { height, totalSize, width } from 'react-native-dimension';
-import { AreaCardData, colors } from '../../../services';
+import { AreaCardData} from '../../../services';
 import Spacer from '../../../components/spacer';
 import { AreaCards } from '../../../components/listFile';
-
 import Wrapper from '../../../components/wrapper';
 import { styles } from './style';
 import { Icon } from 'react-native-elements';
-import { TouchableOpacity } from 'react-native';
 
 const MapScreen = ({ navigation }) => {
   //State
@@ -44,28 +40,28 @@ const MapScreen = ({ navigation }) => {
 
   return (
     <Wrapper style={styles.container}>
-        <Spacer isBasic/>
+      <Spacer isBasic />
       {!showMap ? (
         <Wrapper>
           <Wrapper alignItemsFlexStart style={styles.lefticon}>
-        <Icon  name='arrowleft' type='antdesign' onPress={()=>navigation.goBack()}/>
-        </Wrapper>
-        <Spacer isTiny/>
-        <Buttons.Colored
-        onPress={() => setShowMap(true)}
-          text="Create"
-          buttonStyle={styles.btn} 
-        />
-        <Spacer isBasic/>
-        <AreaCards data={AreaCardData}/>
+            <Icon name='arrowleft' type='antdesign' onPress={() => navigation.goBack()} />
+          </Wrapper>
+          <Spacer isTiny />
+          <Buttons.Colored
+            onPress={() => setShowMap(true)}
+            text="Create"
+            buttonStyle={styles.btn}
+          />
+          <Spacer isBasic />
+          <AreaCards data={AreaCardData} />
         </Wrapper>
       ) : (
         <Wrapper style={styles.mapContainer}>
           <Wrapper alignItemsFlexStart style={styles.lefttoback}>
-        <Icon  name='arrowleft' type='antdesign' onPress={finishDrawing}/>
-        </Wrapper>
+            <Icon name='arrowleft' type='antdesign' onPress={finishDrawing} />
+          </Wrapper>
           <MapView
-           provider={PROVIDER_GOOGLE}
+            provider={PROVIDER_GOOGLE}
             style={styles.map}
             onPress={handleMapPress}
             initialRegion={{

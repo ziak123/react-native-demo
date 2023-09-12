@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { totalSize } from 'react-native-dimension';
-import { Logos,TextInputs, Buttons, ScrollViews, Wrapper, Spacer } from '../../../components';
-import {routes } from '../../../services';
+import { Logos, TextInputs, Buttons, ScrollViews, Wrapper, Spacer } from '../../../components';
+import { routes } from '../../../services';
 import { styles } from './style';
 import Text from '../../../components/text';
 
-function Signin({navigation}) {
+function Signin({ navigation }) {
   //State 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -37,7 +37,7 @@ function Signin({navigation}) {
             iconName="email"
             value={username}
             title={"USER NAME"}
-        onChangeText={(text) => setUsername(text)}
+            onChangeText={(text) => setUsername(text)}
           />
           <Spacer isBasic />
           <TextInputs.Colored
@@ -46,15 +46,15 @@ function Signin({navigation}) {
             iconName="lock"
             value={password}
             onChangeText={(text) => setPassword(text)}
-            secureTextEntry/>
+            secureTextEntry />
           <Spacer isDoubleBase />
           <Buttons.Colored
-          onPress={handleLogin}
+            onPress={handleLogin}
             text="Log In"
             iconName="login"
-            iconType="material-community"/>
-            <Spacer isTiny/>
-             <Text  style={styles.text}>{error}</Text>
+            iconType="material-community" />
+          <Spacer isTiny />
+          <Text style={styles.text}>{error}</Text>
         </Wrapper>
         <Spacer isBasic />
       </ScrollViews.KeyboardAvoiding>
