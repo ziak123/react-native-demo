@@ -6,7 +6,9 @@ export const routes={
     app:'app',
     splash:'splash',
     signin:'signin',
-    mapscreen:'mapscreen'
+    mapscreen:'mapscreen',
+    product:'product',
+    userlist:'userlist'
 }
 export const headers = {
     screenOptions: {

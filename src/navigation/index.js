@@ -29,7 +29,7 @@ export default function Navigation() {
             >
                 <MainStack.Navigator
                     screenOptions={{ headerShown: false }}
-                    initialRouteName={routes.auth}
+                    initialRouteName={routes.app}
                 >
                     <MainStack.Screen
                         name={routes.auth}
